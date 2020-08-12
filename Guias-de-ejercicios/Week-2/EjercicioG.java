@@ -15,6 +15,7 @@ public class EjercicioG {
         
         int variable1 = 12;
         int variable2 = 5;
+        int variable3 = variable1;
         
         System.out.println("Sus variables en este momento son: V1 = " + variable1 + " || " + "V2 = " + variable2);
         
@@ -25,8 +26,8 @@ public class EjercicioG {
         int respuesta = tecladoRespuesta.nextInt();
         
         if(respuesta == 1){
-            variable1 = 5;
-            variable2 = 12;
+            variable1 = variable2;
+            variable2 = variable3;
             System.out.println("Sus variables ahora son: V1 = " + variable1 + " || " + "V2 = " + variable2);
         }else{
             System.out.println("Finalizando programa...");
